@@ -1,0 +1,33 @@
+{
+  "name": "twitter-stream-watch",
+  "version": "0.0.1",
+  "description": "Node app that watches for mentions in Twitter Stream",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melissalabbe/twitter-stream-watch.git"
+  },
+  "author": "Melissa Labbe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melissalabbe/twitter-stream-watch/issues"
+  },
+  "homepage": "https://github.com/melissalabbe/twitter-stream-watch#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "dotenv": "^4.0.0",
+    "request": "^2.79.0",
+    "twitter": "^1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "nodemon": "^1.11.0"
+  }
+}
