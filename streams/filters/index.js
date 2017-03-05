@@ -1,9 +1,8 @@
 const chalk = require('chalk');
 const request = require('request');
+const fetch = require('node-fetch');
 
-const streamFilter = function (tweet) {
-  console.log(chalk.green(tweet.user.screen_name, ' : ', tweet.text));
-
+const alertDevice = function () {
   // post request to particle cloud
   request.post({
     headers: { 'content-type': 'application/x-www-form-urlencoded' },
@@ -15,6 +14,24 @@ const streamFilter = function (tweet) {
       console.log(body);
     }
   });
+};
+
+const streamFilter = function (tweet) {
+  console.log(chalk.green(tweet.user.screen_name, ' : ', tweet.text));
+
+  // get device status
+  fetch('https://api.particle.io/v1/devices/' + process.env.device_id + '?access_token=' + process.env.particle_access_token)
+    .then(function (res) {
+      return res.json();
+    }).then(function (data) {
+      if (data.connected) {
+        alertDevice();
+      } else {
+        console.log('device offline');
+      }
+    }).catch(function (err) {
+      console.log(err);
+    });
 };
 
 module.exports = streamFilter;
