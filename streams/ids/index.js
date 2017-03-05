@@ -2,8 +2,8 @@ const streamIDs = {
 
   STREAM_IDS: [
     {
-      name: 'washingtonpost',
-      id: 2467791
+      name: 'TheAtlantic',
+      id: 35773039
     }
   ]
 };

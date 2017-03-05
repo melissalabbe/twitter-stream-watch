@@ -1,7 +1,7 @@
 {
   "name": "twitter-stream-watch",
   "version": "0.0.1",
-  "description": "Node app that watches for mentions in Twitter Stream",
+  "description": "Node app that watches for user mentions in Twitter Stream",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,7 @@
     "chalk": "^1.1.3",
     "dotenv": "^4.0.0",
     "request": "^2.79.0",
-    "twitter": "^1.7.0"
+    "twit": "^2.2.5"
   },
   "devDependencies": {
     "eslint": "^3.15.0",
@@ -29,5 +29,8 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "4.1.1"
   }
 }

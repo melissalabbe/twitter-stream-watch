@@ -10,7 +10,10 @@ const streamFilter = function (tweet) {
     url: 'https://api.particle.io/v1/devices/' + process.env.device_id + '/led',
     body: 'access_token=' + process.env.particle_access_token + '&arg=blink'
   }, function (error, response, body) {
-    console.log(body);
+    const status = response.statusCode;
+    if (status < 200 || status > 299) {
+      console.log(body);
+    }
   });
 };
 
