@@ -6,6 +6,7 @@
   "rules": {
     "comma-dangle": "off", // disallow trailing commas in object literals
     "prefer-arrow-callback": "off",
-    "prefer-template": "off"
+    "prefer-template": "off",
+    "no-path-concat": "off"
   }
 }

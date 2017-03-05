@@ -16,9 +16,7 @@ const alertDevice = function () {
   });
 };
 
-const streamFilter = function (tweet) {
-  console.log(chalk.green(tweet.user.screen_name, ' : ', tweet.text));
-
+const getDeviceStatus = function () {
   // get device status
   fetch('https://api.particle.io/v1/devices/' + process.env.device_id + '?access_token=' + process.env.particle_access_token)
     .then(function (res) {
@@ -32,6 +30,11 @@ const streamFilter = function (tweet) {
     }).catch(function (err) {
       console.log(err);
     });
+};
+
+const streamFilter = function (tweet) {
+  console.log(chalk.green(tweet.user.screen_name, ' : ', tweet.text));
+  // getDeviceStatus();
 };
 
 module.exports = streamFilter;
