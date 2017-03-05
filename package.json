@@ -4,7 +4,7 @@
   "description": "Node app that watches for user mentions in Twitter Stream",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js && node index.js"
   },
   "repository": {
     "type": "git",
