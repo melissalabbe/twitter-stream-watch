@@ -34,7 +34,7 @@ const getDeviceStatus = function () {
 
 const streamFilter = function (tweet) {
   console.log(chalk.green(tweet.user.screen_name, ' : ', tweet.text));
-  // getDeviceStatus();
+  getDeviceStatus();
 };
 
 module.exports = streamFilter;
