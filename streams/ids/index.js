@@ -4,6 +4,10 @@ const streamIDs = {
     {
       name: 'TheAtlantic',
       id: 35773039
+    },
+    {
+      name: 'realTrumpVoodoo',
+      id: 838828190692945920
     }
   ]
 };
