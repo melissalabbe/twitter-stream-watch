@@ -6,7 +6,8 @@ const streamError = require('./streams/error');
 const streamIDs = require('./streams/ids');
 
 const streamParameters = {
-  follow: streamIDs.getStreamIDs()
+  follow: streamIDs.getStreamIDs(),
+  track: 'realTrumpVoodoo,nasty women'
 };
 
 const T = new Twit({
