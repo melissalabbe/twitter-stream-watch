@@ -17,8 +17,6 @@ const T = new Twit({
   access_token_secret: process.env.access_token_secret
 });
 
-/* -- switch off stream until closing
 const stream = T.stream('statuses/filter', streamParameters);
 stream.on('tweet', streamFilter);
 stream.on('error', streamError);
-*/
