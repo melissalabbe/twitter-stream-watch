@@ -7,7 +7,7 @@ const streamIDs = require('./streams/ids');
 
 const streamParameters = {
   follow: streamIDs.getStreamIDs(),
-  track: 'GirlsWhoCode,IoT'
+  track: 'GirlsWhoCode'
 };
 
 const T = new Twit({
